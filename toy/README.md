@@ -340,3 +340,26 @@ Having 5 positions and counting 10, there are 6 possible unordered codes:
 Never the `2 2 2 2 2` code. 👀 __Should I...?__
 
 
+Code
+===
+
+The signals can be looked as a function of the minimum period in the signal, in this case the separation between "highs" in a block. We will call that a period.
+
+Using that notation, the init sequence lasts for 5 periods at high..
+The separation between blocks is 3 periods at low.
+A symbol in a block is 2 periods at high.
+The separation between periods in a block is 1 period at low.
+
+**The perdiod value is 727us** - calculated using inspectrum, so there's room for error.
+
+Micropython code
+---
+
+The file `main,py` contains the micropython code to imitate one of the singals.
+More signals can be easily added extracting them with inspectrum or other program.
+
+The code it tailored for a tiny2040 microcontroller with a 433 MHz transmitter hooked up on the 29th pin. 
+
+
+
+
